@@ -4,7 +4,8 @@
   "info": {
     "singularName": "category",
     "pluralName": "categories",
-    "displayName": "Category"
+    "displayName": "Category",
+    "description": ""
   },
   "options": {
     "draftAndPublish": false
@@ -16,11 +17,12 @@
       "required": true
     },
     "thumbnail": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "description": {
       "type": "richtext"
@@ -31,10 +33,15 @@
       "target": "api::blog.blog",
       "mappedBy": "category"
     },
-    "slug": {
-      "type": "uid",
-      "targetField": "title",
-      "required": true
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    },
+    "metaSocial": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.meta-social"
     }
   }
 }
