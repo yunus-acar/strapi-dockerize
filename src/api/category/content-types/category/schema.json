@@ -42,6 +42,11 @@
       "type": "component",
       "repeatable": false,
       "component": "shared.meta-social"
+    },
+    "slug": {
+      "type": "string",
+      "unique": true,
+      "required": false
     }
   }
 }

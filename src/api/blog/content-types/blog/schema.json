@@ -54,6 +54,20 @@
       "type": "component",
       "repeatable": false,
       "component": "shared.meta-social"
+    },
+    "subject": {
+      "type": "text"
+    },
+    "name": {
+      "type": "text"
+    },
+    "MyField": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "string",
+      "unique": true,
+      "required": false
     }
   }
 }
